@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+
+# mac file
+.DS_Store
+
+# build folder
+dist
+
+# private key for dockerfile
+id_rsa
+
+# private JetBrain's IDE configuration directory
+.idea/
+
+story_service-pm2.json
