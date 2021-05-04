@@ -37,7 +37,7 @@ export const getBalanceByAddress = async (address: string, network: number) => {
 }
 
 export const getTokenBalanceByAddress = async (address: String, network: number) => {
-    const response = await get(`https://api.covalenthq.com/v1/${network}/address/${address}/balances_v2?key=${process.env.API_KEY}`)
+    const response = await get(`https://api.covalenthq.com/v1/${network}/address/${address}/balances_v2/?key=${process.env.API_KEY}`)
     if (response)
         return response.data.items
     else return []
